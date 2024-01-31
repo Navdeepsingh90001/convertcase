@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --blue: #1e70b9;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    background-color: #f6f8fa;
+}
+a {
+    text-decoration: none;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header#main_header {
+    padding: 10px 20px;
+    background: #fff;
+}
+
+header .nav ul {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 0px !important;
+}
+
+header .nav ul a {
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+section.case-text {
+    padding: 50px 0px;
+}
+
+section.case-text .card {
+    width: 100%;
+    max-width: 60%;
+    margin: 10px auto;
+}
+
+.card-header h1 {
+    text-align: center;
+    margin: 0px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section.case-text .card-body p {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+section.case-text .card-body label {
+    margin-top: 30px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+section.case-text .card-body textarea#textCase {
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    font-size: 15px;
+    font-family: poppins;
+    color: #000;
+}
+
+section.case-text .card-body  button {
+    background: #1e70b9;
+    color: #fff;
+    padding: 8px 15px;
+    font-family: 'POPPINS';
+    font-size: 15px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.sub-btns {
+    flex-wrap: wrap;
+}
+
+@media (max-width:767px) 
+{
+    section.case-text {
+        max-width: 100% !important;
+    }
+    section.case-text .card {
+        max-width: 90% !important;
+    }
+
+    .card-header h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    section.case-text .card-body textarea#textCase {
+        width: 90%;
+    }
+    .input-icons {
+        position: unset !important;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width:1080px)
+{
+    section.case-text {
+        max-width: 100% !important;
+    }
+    section.case-text .card {
+        max-width: 90% !important;
+    }
+
+    .card-header h1 {
+        font-size: 30px;
+    }
+    section.case-text .card-body textarea#textCase {
+        width: 100%;
+    }
+}
